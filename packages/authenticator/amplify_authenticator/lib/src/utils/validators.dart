@@ -11,7 +11,8 @@ import 'package:flutter/material.dart';
 */
 final usernameRegex = RegExp(r'^\S+$');
 final emailRegex = RegExp(r'^\S+@\S+$');
-final phoneNumberRegex = RegExp(r'^\+\d+$');
+//final phoneNumberRegex = RegExp(r'^\+\d+$');
+final phoneNumberRegex = RegExp(r'(^\+33[67]\d{8}$)|(^\+(?!33)\d+$)');
 final _codeRegex = RegExp(r'^\d{6}$');
 final _uppercase = RegExp(r'[A-Z]');
 final _lowercase = RegExp(r'[a-z]');
